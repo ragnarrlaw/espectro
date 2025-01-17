@@ -1,0 +1,6 @@
+CompileFlags:
+  Add: [
+    -I/home/bobby/playground/c/espectro/include,
+    -I/home/bobby/playground/c/espectro/src
+  ]
+
