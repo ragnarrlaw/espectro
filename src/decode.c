@@ -74,7 +74,7 @@ void decode_audio(const char *filename, const char *output_pcm) {
     return;
   }
 
-  av_init_packet(&packet);
+  // av_init_packet(&packet);
   packet.data = NULL;
   packet.size = 0;
 
