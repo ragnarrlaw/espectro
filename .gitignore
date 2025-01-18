@@ -56,4 +56,4 @@ bin/
 build/
 
 # clang
-.clang
+.clangd
