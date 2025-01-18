@@ -54,3 +54,6 @@ dkms.conf
 # build and bin
 bin/
 build/
+
+# clang
+.clang
