@@ -5,7 +5,6 @@
 void dft(const float *input, float *magnitude, int N) {
   float max_magnitude = 0.0;
 
-  // compute DFT
   for (int k = 0; k < N; k++) {
     double complex Xk = 0.0 + 0.0 * I;
     for (int n = 0; n < N; n++) {

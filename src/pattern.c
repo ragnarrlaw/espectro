@@ -21,7 +21,7 @@ void visualize(const float *magnitude, int size) {
   for (int i = 0; i < size && i < display_width; i++) {
     int bar_height = (int)(magnitude[i] * display_height);
     for (int j = 0; j < bar_height && j < display_height; j++) {
-      mvprintw(max_y - j - 1, i, "|");
+      mvprintw(max_y - j - 1, i, "-");
     }
   }
   refresh();
@@ -49,7 +49,7 @@ void visualize_wave_pattern(const float *magnitude, int size) {
     }
 
     for (int j = 0; j < bar_height; j++) {
-      mvprintw(max_y - j - 1, i, "|");
+      mvprintw(max_y - j - 1, i, "-");
     }
 
     attroff(COLOR_PAIR(1) | COLOR_PAIR(2) | COLOR_PAIR(3));
@@ -79,7 +79,7 @@ void visualize_moving_wave(const float *magnitude, int size, float phase) {
     }
 
     for (int j = 0; j < bar_height; j++) {
-      mvprintw(max_y - j - 1, i, "|");
+      mvprintw(max_y - j - 1, i, "-");
     }
 
     attroff(COLOR_PAIR(1) | COLOR_PAIR(2) | COLOR_PAIR(3));
